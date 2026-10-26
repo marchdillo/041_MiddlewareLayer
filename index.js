@@ -65,3 +65,8 @@ const biodataSchema = Joi.object({
 });
 
 
+const idschema = Joi.object({
+    id: Joi.number().integer().positive().required(),
+})
+
+
