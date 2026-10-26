@@ -55,3 +55,10 @@ function errorResponse(res, message, status, details = null) {
 }
 
 
+//joi validation schema
+
+const biodataSchema = Joi.object({
+    
+});
+
+
