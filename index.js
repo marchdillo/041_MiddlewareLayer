@@ -153,6 +153,26 @@ app.post(
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
 app.delete(
     '/biodata/:id',
     validateParams(idschema),
@@ -179,3 +199,11 @@ app.delete(
         )
     }
 )
+//route tidak ditemukan
+app.use('*', (req, res) => {
+    return errorResponse(res, 'Route tidak ditemukan', 404)
+})
+
+
+
+
